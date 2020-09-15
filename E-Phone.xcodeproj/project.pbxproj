@@ -3,27 +3,29 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		04510555250C19A000648E1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04510554250C19A000648E1A /* AppDelegate.swift */; };
 		04510557250C19A000648E1A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04510556250C19A000648E1A /* SceneDelegate.swift */; };
-		04510559250C19A000648E1A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04510558250C19A000648E1A /* ViewController.swift */; };
 		0451055C250C19A000648E1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0451055A250C19A000648E1A /* Main.storyboard */; };
 		0451055E250C19A800648E1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0451055D250C19A800648E1A /* Assets.xcassets */; };
 		04510561250C19A800648E1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0451055F250C19A800648E1A /* LaunchScreen.storyboard */; };
+		0B653C6E0A82E9D67C4046B5 /* Pods_E_Phone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5446F963D3A6799280C144A8 /* Pods_E_Phone.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		04510551250C19A000648E1A /* E-Phone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "E-Phone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04510554250C19A000648E1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04510556250C19A000648E1A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		04510558250C19A000648E1A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0451055B250C19A000648E1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0451055D250C19A800648E1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04510560250C19A800648E1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04510562250C19A800648E1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48A0C0E372752EC189F8793E /* Pods-E-Phone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E-Phone.release.xcconfig"; path = "Target Support Files/Pods-E-Phone/Pods-E-Phone.release.xcconfig"; sourceTree = "<group>"; };
+		5446F963D3A6799280C144A8 /* Pods_E_Phone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_E_Phone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85A2A4826E95FD6602ED0EF5 /* Pods-E-Phone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E-Phone.debug.xcconfig"; path = "Target Support Files/Pods-E-Phone/Pods-E-Phone.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B653C6E0A82E9D67C4046B5 /* Pods_E_Phone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +45,8 @@
 			children = (
 				04510553250C19A000648E1A /* E-Phone */,
 				04510552250C19A000648E1A /* Products */,
+				17D70BD11F02210CD01A617F /* Pods */,
+				5508F6C14A952DCE7E19241A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +63,29 @@
 			children = (
 				04510554250C19A000648E1A /* AppDelegate.swift */,
 				04510556250C19A000648E1A /* SceneDelegate.swift */,
-				04510558250C19A000648E1A /* ViewController.swift */,
 				0451055A250C19A000648E1A /* Main.storyboard */,
 				0451055D250C19A800648E1A /* Assets.xcassets */,
 				0451055F250C19A800648E1A /* LaunchScreen.storyboard */,
 				04510562250C19A800648E1A /* Info.plist */,
 			);
 			path = "E-Phone";
+			sourceTree = "<group>";
+		};
+		17D70BD11F02210CD01A617F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				85A2A4826E95FD6602ED0EF5 /* Pods-E-Phone.debug.xcconfig */,
+				48A0C0E372752EC189F8793E /* Pods-E-Phone.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5508F6C14A952DCE7E19241A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5446F963D3A6799280C144A8 /* Pods_E_Phone.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04510565250C19A800648E1A /* Build configuration list for PBXNativeTarget "E-Phone" */;
 			buildPhases = (
+				74299F6DF1ACE1CFC927A5F3 /* [CP] Check Pods Manifest.lock */,
 				0451054D250C19A000648E1A /* Sources */,
 				0451054E250C19A000648E1A /* Frameworks */,
 				0451054F250C19A000648E1A /* Resources */,
+				D64F5970B4079B37D03A0F4B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,12 +156,53 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		74299F6DF1ACE1CFC927A5F3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-E-Phone-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D64F5970B4079B37D03A0F4B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-E-Phone/Pods-E-Phone-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-E-Phone/Pods-E-Phone-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-E-Phone/Pods-E-Phone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0451054D250C19A000648E1A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04510559250C19A000648E1A /* ViewController.swift in Sources */,
 				04510555250C19A000648E1A /* AppDelegate.swift in Sources */,
 				04510557250C19A000648E1A /* SceneDelegate.swift in Sources */,
 			);
@@ -282,11 +346,13 @@
 		};
 		04510566250C19A800648E1A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85A2A4826E95FD6602ED0EF5 /* Pods-E-Phone.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T5GA7DTMUP;
 				INFOPLIST_FILE = "E-Phone/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,11 +366,13 @@
 		};
 		04510567250C19A800648E1A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48A0C0E372752EC189F8793E /* Pods-E-Phone.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T5GA7DTMUP;
 				INFOPLIST_FILE = "E-Phone/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
