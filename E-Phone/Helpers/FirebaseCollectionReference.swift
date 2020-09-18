@@ -9,13 +9,14 @@
 import Foundation
 import FirebaseFirestore
 
+//databse collections
 enum FCollectionReference : String {
     case User
     case Category
     case Items
     case Basket
 }
-func Firebasereference (_ FCollection: FCollectionReference) -> CollectionReference {
+ func Firebasereference (_ FCollection: FCollectionReference) -> CollectionReference {
     
     return Firestore.firestore().collection(FCollection.rawValue)
 }

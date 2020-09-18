@@ -16,6 +16,9 @@
 		04A16BB42515104200BB11DF /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A16BB32515104200BB11DF /* CategoryCollectionViewCell.swift */; };
 		04A16BB62515129300BB11DF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04A16BB52515129300BB11DF /* GoogleService-Info.plist */; };
 		04A16BB82515187B00BB11DF /* FirebaseCollectionReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A16BB72515187B00BB11DF /* FirebaseCollectionReference.swift */; };
+		04A16BBA25151CFA00BB11DF /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A16BB925151CFA00BB11DF /* Category.swift */; };
+		04A16BBD251520E400BB11DF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A16BBC251520E400BB11DF /* Constants.swift */; };
+		04A16BC2251524C400BB11DF /* EPhoneBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A16BC1251524C400BB11DF /* EPhoneBrain.swift */; };
 		0B653C6E0A82E9D67C4046B5 /* Pods_E_Phone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5446F963D3A6799280C144A8 /* Pods_E_Phone.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +34,9 @@
 		04A16BB32515104200BB11DF /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		04A16BB52515129300BB11DF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		04A16BB72515187B00BB11DF /* FirebaseCollectionReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseCollectionReference.swift; sourceTree = "<group>"; };
+		04A16BB925151CFA00BB11DF /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		04A16BBC251520E400BB11DF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		04A16BC1251524C400BB11DF /* EPhoneBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPhoneBrain.swift; sourceTree = "<group>"; };
 		48A0C0E372752EC189F8793E /* Pods-E-Phone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E-Phone.release.xcconfig"; path = "Target Support Files/Pods-E-Phone/Pods-E-Phone.release.xcconfig"; sourceTree = "<group>"; };
 		5446F963D3A6799280C144A8 /* Pods_E_Phone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_E_Phone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		85A2A4826E95FD6602ED0EF5 /* Pods-E-Phone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E-Phone.debug.xcconfig"; path = "Target Support Files/Pods-E-Phone/Pods-E-Phone.debug.xcconfig"; sourceTree = "<group>"; };
@@ -71,16 +77,51 @@
 			children = (
 				04510554250C19A000648E1A /* AppDelegate.swift */,
 				04510556250C19A000648E1A /* SceneDelegate.swift */,
-				0451055A250C19A000648E1A /* Main.storyboard */,
-				04A16BB32515104200BB11DF /* CategoryCollectionViewCell.swift */,
-				04A16BB72515187B00BB11DF /* FirebaseCollectionReference.swift */,
-				04A16BB12515100600BB11DF /* CategoryCollectionViewController.swift */,
+				04A16BBE2515226900BB11DF /* Model */,
+				04A16BC02515229300BB11DF /* View */,
+				04A16BBF2515227800BB11DF /* Controller */,
+				04A16BBB251520D000BB11DF /* Helpers */,
 				0451055D250C19A800648E1A /* Assets.xcassets */,
 				0451055F250C19A800648E1A /* LaunchScreen.storyboard */,
 				04510562250C19A800648E1A /* Info.plist */,
 				04A16BB52515129300BB11DF /* GoogleService-Info.plist */,
 			);
 			path = "E-Phone";
+			sourceTree = "<group>";
+		};
+		04A16BBB251520D000BB11DF /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				04A16BB72515187B00BB11DF /* FirebaseCollectionReference.swift */,
+				04A16BBC251520E400BB11DF /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		04A16BBE2515226900BB11DF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04A16BB925151CFA00BB11DF /* Category.swift */,
+				04A16BC1251524C400BB11DF /* EPhoneBrain.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04A16BBF2515227800BB11DF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04A16BB12515100600BB11DF /* CategoryCollectionViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		04A16BC02515229300BB11DF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0451055A250C19A000648E1A /* Main.storyboard */,
+				04A16BB32515104200BB11DF /* CategoryCollectionViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		17D70BD11F02210CD01A617F /* Pods */ = {
@@ -218,9 +259,12 @@
 			files = (
 				04A16BB42515104200BB11DF /* CategoryCollectionViewCell.swift in Sources */,
 				04510555250C19A000648E1A /* AppDelegate.swift in Sources */,
+				04A16BC2251524C400BB11DF /* EPhoneBrain.swift in Sources */,
 				04A16BB82515187B00BB11DF /* FirebaseCollectionReference.swift in Sources */,
 				04510557250C19A000648E1A /* SceneDelegate.swift in Sources */,
+				04A16BBD251520E400BB11DF /* Constants.swift in Sources */,
 				04A16BB22515100600BB11DF /* CategoryCollectionViewController.swift in Sources */,
+				04A16BBA25151CFA00BB11DF /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
